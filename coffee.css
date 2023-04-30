@@ -1,0 +1,8 @@
+.coffeecup{
+	float: right;
+}
+.cup{
+	width: 300px;
+	float: right;
+	background-color:white;
+}
