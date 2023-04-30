@@ -1,0 +1,31 @@
+.nest{
+	text-align: center;
+	color: black;
+	font-size: 50px;
+}
+.margin{
+	margin: 1px;
+}
+.input{
+	box-align: center;
+	width: 550px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+
+}
+fieldset{
+	height:100%;
+	width:80%;
+
+}
+button{
+	padding: 5px;
+	margin-top: 10px;
+}
+.img{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.div{
+	line-height:0px;
+}
