@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>try</title> 
+
+
+	<script type="text/javascript">
+	//console,log
+	var x = 12;
+	var y = 13;
+	var z = x + y;
+	console.log("the value of z is " + z); //console.log(`the value of z iz ${z}`)
+
+	console.log("nest".length); //here you get the number of alphabet ie length of the wor nest
+
+	console.log("hello".toUpperCase()); //it convert the word hello to upper case
+
+	console.log("hello".startsWith("h")); //it gives true or false by checking if the word hello start with h
+
+	// in built mathematical operation
+	console.log(Math.random());
+	console.log(Math.random()*50);//gives random number
+
+	console.log(Math.floor(Math.random()*50));
+	console.log(Math.floor(Math.random() * 100));//it gives random number but not decimal number
+
+	console.log(Math.ceil(43.8));//approximate to whole number
+
+	console.log(Number.isInteger(2017));
+	document.write(Number.isInteger(2000));//gives true
+
+	const entree = 'Enchiladas';
+	console.log(entree);
+	//this will give error message
+	//entree = 'Tacos'
+
+
+	//mathematical operation
+	let levelUp = 10;
+	levelUp+=5;
+	let powerLevel = 9001;
+	powerLevel-=100;
+	let multiplyMe = 32;
+	multiplyMe*=11;
+	let quarterMe = 1152;
+	quarterMe/=4;
+
+	// These console.log() statements below will help you check the values of the variables.
+	// You do not need to edit these statements. 
+	console.log('The value of levelUp:', levelUp); 
+	console.log('The value of powerLevel:', powerLevel); 
+	console.log('The value of multiplyMe:', multiplyMe); 
+	console.log('The value of quarterMe:', quarterMe);
+
+	//increament
+	let gainedDollar = 3;
+	let lostDollar = 50;
+	gainedDollar++;
+	lostDollar--;
+	console.log(gainedDollar);
+	console.log(lostDollar);
+
+	//concatinate
+	let favoriteAnimal = "giraffe";
+	console.log("My favorite animal: " + favoriteAnimal);
+
+	//interpolation
+	let city = "mwanza";
+	let name = "ernest";
+	console.log(`my name is ${name} my favorite city is ${city}`);
+	
+	//typeof variable
+	let newVariable = 'Playing around with typeof.';
+	console.log(typeof newVariable);
+	newVariable = 1;
+	console.log(typeof newVariable);
+	 
+			//conversion of kelvin to celsius
+	const kelvin = 293;
+	//celsius
+	const celsius = kelvin - 273;
+	//fahrenheit
+	let fahrenheit  = celsius*(9/5)+32;
+	//floor
+	console.log(Math.floor(fahrenheit));
+	//interpolation
+	console.log(`the temperature is ${fahrenheit}`);
+	//newton
+	let newton = celsius*(33/100);
+	//interpolation
+	console.log(`the temperature in newton is ${Math.floor(newton)}`);
+
+	const myAge = 32;
+	//mym age
+	let earlyYears = 2;
+	//early year
+	earlyYears = earlyYears*10.5;
+	let lateryears= myAge-2;
+	//yaksskhaashgcsaajh
+	lateryears*4;
+	//gdfjbaskdajh
+	console.log(earlyYears);
+	console.log(lateryears);
+	var myageindogyears= earlyYears+lateryears;
+	console.log(myageindogyears);
+	//jsafjhffad
+	let myname ="ERNEST";
+	//myname.toLowerCase();
+	console.log(`my name is ${myname.toLowerCase()} i am ${myAge} old in human years which is ${myageindogyears} years old  in dog`);
+	//jfjfhfhfh
+
+
+	let sale = true;
+	sale=false
+	if (sale===true){
+	console.log("time to buy");
+	}
+	else{
+	console.log("not time to buy");
+	}
+
+	let hungerlevel=7;
+	if (hungerlevel>7){
+	console.log("time to eat");
+	}
+	else{
+	console.log("we can eat later");
+	}
+
+
+	//var myName ='buzhune';
+	//document.getElementById('nest').innerHTML = myname;
+
+	let nest = 'green';
+	let ivy = 'blue';
+	if (nest === 'blue' && ivy === 'green'){
+		console.log("go");
+	}
+	else{
+		console.log("dont go");
+	}
+	
+	let nesty = 'green';
+	let iv = 'blue';
+	if (nesty === 'green' || iv === 'red'){
+		console.log("go");
+	}
+	else{
+		console.log("dont go");
+	}
+	//truthy and falsy value
+	let wordCount = 0;
+
+	if (wordCount) {
+	console.log("Great! You've started your work!");
+	} else {
+	console.log('Better get to work!');
+	}
+
+
+	let favoritePhrase = '';
+
+	if (favoritePhrase) {
+	console.log("This string doesn't seem to be empty.");
+	} else {
+	console.log('This string is definitely empty.');
+	}
+	
+	let username = '';
+	let defaultName;
+	
+	if (username) {
+	defaultName = username;
+	} else {
+	defaultName = 'Stranger';
+	}
+	
+	console.log(defaultName);
+	//OR
+	
+	/*let username = '';
+	let defaultName;
+	
+	if (username) {
+	defaultName = username;
+	} else {
+	defaultName = 'Stranger';
+	}
+	
+	console.log(defaultName); */
+
+
+	//ternary operator
+	let isLocked = false;
+
+	/*if (isLocked) {
+	console.log('You will need a key to open the door.');
+	} else {
+	console.log('You will not need a key to open the door.');
+	}*/
+	isLocked ? console.log('you will need a key') : console.log('you will not need a key');
+
+
+	let isCorrect = true;
+
+	/*if (isCorrect) {
+	console.log('Correct!');
+	} else {
+	console.log('Incorrect!');
+	}*/
+	isCorrect ? console.log('you will need a key') : console.log('you will not need a key');
+
+	let favoritePhrases = 'Love That!';
+
+	/*if (favoritePhrase === 'Love That!') {
+	console.log('I love that!');
+	} else {
+	console.log("I don't love that!");
+	}*/ 
+	favoritePhrases ? console.log('you will need a key') : console.log('you will not need a key');
+
+
+
+	// else if statement
+	let stopLight = 'yellow';
+ 
+	if (stopLight === 'red') {
+	console.log('Stop!');
+	} else if (stopLight === 'yellow') {
+	console.log('Slow down.');
+	} else if (stopLight === 'green') {
+	console.log('Go!');
+	} else {
+	console.log('Caution, unknown!');
+	}
+
+	let season = 'summer';
+
+	if (season === 'spring') {
+	console.log('It\'s spring! The trees are budding!');
+	} else if(season === 'winter') {
+	console.log('It\'s winter! Everything is covered in snow.');
+	} else if(season === 'fall') {
+	console.log('It\'s fall! Leaves are falling!');
+	} else if(season === 'summer') {
+	console.log('It\'s sunny and warm because it\'s summer!');
+	} else {
+	console.log('Invalid season.');
+	}
+
+	//switc operation
+	let groceryItem = 'papaya';
+ 
+	switch (groceryItem) {
+	case 'tomato':
+		console.log('Tomatoes are $0.49');
+		break;
+	case 'lime':
+		console.log('Limes are $1.49');
+		break;
+	case 'papaya':
+		console.log('Papayas are $1.29');
+		break;
+	default:
+		console.log('Invalid item');
+		break;
+	}
+
+	//function delaration and calling 
+	function saythanks(){
+		console.log('thanks for coming');
+	}
+	saythanks();
+
+	//a function can be called as many as times
+	function sayThanks() {
+	console.log('Thank you for your purchase! We appreciate your business.');
+	}
+
+	sayThanks();
+	sayThanks();
+	sayThanks();
+	
+	function sayThanks(name) {
+	console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
+	}
+
+	sayThanks('nestyy');
+	function makeShoppingList(item1='milk', item2='bread', item3='eggs'){
+	console.log(`Remember to buy ${item1}`);
+	console.log(`Remember to buy ${item2}`);
+	console.log(`Remember to buy ${item3}`);
+	}
+	makeShoppingList();
+
+
+	function greeting (name = 'stranger') {
+  	console.log(`Hello, ${name}!`)
+	}
+ 
+	greeting('Nick') // Output: Hello, Nick!
+	greeting() // Output: Hello, stranger!
+
+	function rectangleArea(width, height) {
+	let area = width * height;
+	console.log(area);
+	
+	}
+	
+	</script>
+	
+</head>
+<body>
+	<p id="cynthia"></p>
+	<h1>glorie</h1>
+
+	<script>
+		
+	function multply (b,c){
+		return a = b*c;
+	}
+	document.getElementById('cynthia').innerHTML = multply(7,9);
+	
+	
+	// arrow function
+	let multply2 = (b,c) => b*c;
+	document.getElementById('cynthia').innerHTML = (3,5);
+	
+
+	
+	function rectangleArea(width, height) {
+	let area = width * height;
+	return area;
+	}
+	//console.log(rectangleArea(5, 7)) // Prints undefined
+	document.getElementById('cynthia').innerHTML = rectangleArea(5,7);
+
+	//arrow function
+	//let rectangleArea = (width, height) => area = width * height;
+
+	
+	//console.log(rectangleArea(5, 7)) // Prints undefined
+	//document.getElementById('cynthia').innerHTML = rectangleArea(5,7);
+
+	
+	//REGULAR EXPRESSIONS
+	//WAY TO SEARCH A STRING OF TEXT IORDER TO DO A VALIDATIONS ETC
+	//[abc]  means a,b,c
+	//[^abc] means any character except a,b,c
+	//[a-z]  means all character between a to z
+	//[A-Z] means all character between A to Z
+	//[a-z A-Z] or \w  all character CAPITAL or small between a-z
+	//[0-9]  or \d any digit btn 0-9
+	//[^0-9] or \D
+	//[ ]? eg [b]?  occurs 0 or 1 times
+	//[ ]+ eg [b]+   occurs 1 or more times 
+	//[ ]* eg [b]*  occurs 0 or more times 
+	//[ ]{n} eg [b]{3}   occurs  n times
+	//[ ]{n,} eg [b]{3,}  occurs n or more times
+	//[ ]{y,z} eg [a]{3,4}  occurs atleast y times but less than z time 
+
+	//fetch api
+	// fetch('https://ipapi.co/8.8.8.8/json')
+	// 	.then(function(res){
+	// 		return res.json();
+	// 	})
+	// 	.then(function(data){
+	// 		console.log(data);
+	// 	})
+	//arrow function
+	fetch('https://ipapi.co/8.8.8.8/json')
+		.then((res)=>res.json())
+		.then((data)=>console.log(data))
+
+	
+
+	
+	</script>
+
+
+
+</body>
+</html>

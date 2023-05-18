@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Registration Form</title>
+  <script src="Regform.js">
+    
+  </script>
+</head>
+
+<body>
+  <h1>Student Registration Form</h1>
+  <form onsubmit="return validateForm();">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="regNo">Register Number:</label>
+    <input type="text" id="regNo" name="regNo" required><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <label for="program">Program:</label>
+    <input type="text" id="program" name="program" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="tempAddress">Temporary Address:</label>
+    <textarea id="tempAddress" name="tempAddress" required></textarea><br><br>
+    <label for="permanentSameAsTemp">Permanent Address is same as Temporary Address:</label>
+    <input type="checkbox" id="permanentSameAsTemp" name="permanentSameAsTemp"
+      onchange="togglePermanentAddress();">
+    <label for="permanentAddress">Permanent Address:</label>
+    <textarea id="permanentAddress" name="permanentAddress"></textarea><br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+</html>  

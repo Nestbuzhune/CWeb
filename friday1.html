@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script>   
+        function pricematch(){
+            const Nest = document.getElementById("nest")
+            const priceNest = /^\$\d+(\.\d{2})?$/;
+            const price = Nest.value.trim();
+
+            if (priceNest.test(price)) {
+            document.getElementById("result").textContent =`the price ${price} is valid`;
+            } else {
+                document.getElementById("result").textContent =`the price ${price} is invalid`;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Price Matching</h1>
+    <input type="text" id ="nest" placeholder="enter price" />
+    <button onclick="pricematch()">match</button>
+    <p id='result'></p>
+
+</body>
+</html>
