@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midterm prepation test</title>
+</head>
+<body>
+    <p id="buzhune"></p>
+    <form action="" id="cynthia">
+        <label for="Entry:"> <b> Entry:</b></label>
+        <input type="text" id="entyrinput">
+    </form><br><br>
+    <span>
+        <button onclick="submit" id="addEntry">AddEntry</button>
+        <button onclick="summary" id="summarybtn">Summary</button>
+    </span>
+    <h2>Entries</h2>
+     <div id="entries"></div>
+
+    <h2>Summary</h2>
+    <div id="summary"></div>
+    <script>
+    const cynthia = [];
+    function addentry() {
+        const entryInput = document.getElementById('entryInput');
+        const entryValue = entryInput.value.trim();
+        if (entryValue === '' || entryValue.split(',').length !== 3) {
+        alert('Invalid entry');
+        return;
+    }
+    
+      const [directoryId, description, duration] = entryValue.split(',');
+      const entry = {
+        directoryId: directoryId.trim(),
+        description: description.trim(),
+        duration: duration.trim()
+      };
+        cynthia.push(entry);
+        entryInput.value = '';
+        displayEntries();
+
+    }
+    function summary() {
+      const sortedEntries = cynthia.sort((a, b) => a.duration - b.duration)
+      let summaryString = `Number of entries: ${cynthia.length}<br><br>`;
+
+      for (const entry of sortedEntries) {
+        summaryString += `${entry.directoryId} ${entry.description} ${entry.duration}<br>`;
+      }
+      document.getElementById('summary').innerHTML = summaryString;
+    }
+
+    function displayEntries() {
+      let entriesString = '';
+
+      for (const entry of assistanceEntries) {
+        entriesString += `${entry.directoryId} ${entry.description} ${entry.duration}<br>`;
+      }
+      document.getElementById('entries').innerHTML = entriesString;
+    }
+    document.getElementById('addEntryBtn').addEventListener('click', addEntry);
+    document.getElementById('summaryBtn').addEventListener('click', summary);
+    </script>
+</body>
+</html>
